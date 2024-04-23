@@ -13,6 +13,9 @@ wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
 async def measure_time(n: int, max_delay: int) -> float:
+    """function with integers n and max_delay as arguments
+    and returns total_time / n
+    """
     start_time = time.time()
     await wait_n(n, max_delay)
     end_time = time.time()
