@@ -1,4 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
+
 """Annotate the below functions parameters and return
 values with the appropriate types
 """
