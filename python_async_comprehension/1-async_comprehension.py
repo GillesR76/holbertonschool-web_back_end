@@ -12,7 +12,7 @@ async def async_comprehension() -> List[float]:
     """coroutine that collects 10 random numbers using an
     async comprehensing then return the 10 random numbers
     """
-    list_nbrs = [i async for i in async_generator()]
+    list_nbrs = []
     async for number in async_generator():
         list_nbrs.append(number)
     return list_nbrs
