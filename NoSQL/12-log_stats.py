@@ -20,4 +20,4 @@ if __name__ == "__main__":
         print(f"\tmethod {method}: {count}")
     count_status = nginx_collection.count_documents(
         {"method": "GET", "path": "/status"})
-    print(f"{count} status check")
+    print(f"{count_status} status check")
