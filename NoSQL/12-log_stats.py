@@ -8,6 +8,7 @@ from pymongo import MongoClient
 
 
 if __name__ == "__main__":
+    """Python script that provides stats about Nginx logs"""
     client = MongoClient()
     logs_db = client.logs
     nginx_collection = logs_db.nginx
