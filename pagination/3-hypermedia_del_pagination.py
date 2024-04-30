@@ -47,7 +47,6 @@ class Server:
         the end value we refer to total_items and not total_items - 1
         """
         total_items = len(self.dataset())
-        index = 0 if index is None else index
         assert index in range(0, total_items)
         data = []
         indexed_data = self.indexed_dataset()
