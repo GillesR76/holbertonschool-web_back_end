@@ -41,10 +41,10 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-        The valid range for the index is from 0 to the length of the dataset minus 1
-        because in Python (and most programming languages), list indices start at 0, not 1.
-        Here, because the range function excludes the end value we refer to total_items and
-        not total_items - 1
+        The valid range for the index is from 0 to the length of the dataset
+        minus 1 because in Python (and most programming languages), list
+        indices start at 0, not 1. here, because the range function excludes
+        the end value we refer to total_items and not total_items - 1
         """
         total_items = len(self.dataset())
         index = 0 if index is None else index
