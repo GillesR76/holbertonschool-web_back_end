@@ -51,9 +51,9 @@ class Server:
         assert index in range(0, total_items)
         data = []
         indexed_data = self.indexed_dataset()
-        for item in indexed_data.keys():
+        for key, value in indexed_data.items():
             if len(data) <= page_size:
-                data.append(item)
+                data.append(value)
             else:
                 break
         next_index = index + len(data)
