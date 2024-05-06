@@ -1,15 +1,18 @@
 import { taskFirst, getLast, taskNext } from './0-constants';
 
 describe('0-constants', () => {
-  test('taskFirst returns correct string', () => {
+  it('taskFirst returns correct string', () => {
+    expect.assertions(1);
     expect(taskFirst()).toBe('I prefer const when I can.');
   });
 
-  test('getLast returns correct string', () => {
+  it('getLast returns correct string', () => {
+    expect.assertions(1);
     expect(getLast()).toBe(' is okay');
   });
 
-  test('taskNext returns correct string', () => {
+  it('taskNext returns correct string', () => {
+    expect.assertions(1);
     expect(taskNext()).toBe('But sometimes let is okay');
   });
 });
